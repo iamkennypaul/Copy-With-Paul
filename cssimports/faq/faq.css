@@ -3,8 +3,10 @@
 }
 
 .faqHead {
+  margin: 0 auto;
   margin-top: 5rem;
   text-align: center;
+  width: 95%;
 }
 
 .accordion {
