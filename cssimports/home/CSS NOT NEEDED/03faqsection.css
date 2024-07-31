@@ -1,0 +1,116 @@
+.faqhome {
+  display: flex;
+  flex-flow: column wrap;
+  background: #00246b;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.textfaq {
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.textfaq button {
+  border: 2px solid #fff;
+  background: #00246b;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.photofaq {
+  width: 100%;
+}
+
+.photofaq img {
+  height: 250px;
+  width: 100%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .faqhome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .textfaq {
+    width: 50%;
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .textfaq button {
+    padding: 13px;
+    font-size: 17px;
+    border-radius: 50px;
+  }
+
+  .textfaq h3 {
+    font-size: 24px;
+  }
+
+  .photofaq {
+    width: 50%;
+  }
+
+  .photofaq img {
+    height: 350px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 760px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .faqhome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+
+  .textfaq {
+    margin-top: 160px;
+    color: #fff;
+    width: 47%;
+  }
+
+  .textfaq h3 {
+    font-size: 30px;
+  }
+
+  .textfaq p {
+    font-size: 17px;
+  }
+
+  .textfaq button {
+    border: 2px solid #fff;
+    background: #00246b;
+    padding: 14px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+
+  .photofaq {
+    width: 50%;
+    margin-left: 2%;
+  }
+
+  .photofaq img {
+    height: 500px;
+    width: 100%;
+  }
+}

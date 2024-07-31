@@ -1,0 +1,40 @@
+@import url("./dmsans.css");
+@import url("./playfairDisplay.css");
+/* fontreset.css and navigation.css are common css imports for all html pages */
+@import url("../cssimports/fontandreset.css");
+@import url("../cssimports/navigation.css");
+
+/* css for home page */
+@import url("../cssimports/home/01a.me.css");
+@import url("../cssimports/home/01b.homeServ.css");
+@import url("../cssimports/home/01c.process.css");
+@import url("../cssimports/home/01d.getstarted.css");
+/* @import url("../cssimports/home/01a.carousel.css"); */
+/* @import url("../cssimports/home/01vector.css"); */
+/* @import url("../cssimports/home/02fileStory.css"); */
+/* @import url("../cssimports/home/03faqsection.css"); */
+@import url("../cssimports/home/04multitext.css");
+@import url("../cssimports/home/05.testimonial.css");
+
+/* css for about page */
+@import url("../cssimports/about/about.css");
+
+/* css for faq page */
+@import url("../cssimports/faq/faq.css");
+
+/* css for porfolio page */
+@import url("../cssimports/portfolio/portfolio.css");
+
+/* css for services page */
+/* @import url("../cssimports/services/services.css"); */
+
+/* css for contact page */
+@import url("../cssimports/contact/contact.css");
+
+/* css for terms page */
+/* @import url("../cssimports/terms/terms.css"); */
+
+/* css for privacy page */
+/* @import url("../cssimports/privacy/privacy.css"); */
+
+@import url("../cssimports/footer.css");

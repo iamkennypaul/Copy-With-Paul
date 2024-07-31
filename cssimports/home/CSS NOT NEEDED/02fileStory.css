@@ -1,0 +1,81 @@
+.productsection {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.PRD {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #00246b;
+}
+
+.row-cols-1 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col .card img {
+  width: 100%;
+  height: 300px;
+  /* Set a fixed height or use a flexible unit like vh */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* Ensure the image covers the container */
+}
+
+.productsection .bts {
+  margin-top: 30px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+@media (min-width: 760px) {
+  .productsection {
+    margin-top: 50px;
+  }
+
+  .PRD {
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .productsection {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .PRD {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .col {
+    width: 33%;
+    margin-bottom: 30px;
+  }
+
+  .col .card img {
+    width: 100%;
+    height: 300px;
+    /* Set a fixed height or use a flexible unit like vh */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* Ensure the image covers the container */
+  }
+
+  .productsection .bts {
+    margin-top: 30px;
+  }
+}

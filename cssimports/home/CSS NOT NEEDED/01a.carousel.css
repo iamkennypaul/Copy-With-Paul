@@ -1,0 +1,163 @@
+/* styles for carousel */
+.carousel-caption {
+  top: 3.5em;
+  z-index: 10;
+  top: 100px;
+  left: 20px;
+  padding-bottom: 1000px;
+}
+
+.carousel-caption h5 {
+  font-size: 25px;
+  color: white;
+}
+
+.carousel-caption span {
+  font-size: 15px;
+  color: white;
+}
+
+.carousel-inner>.carousel-item>img {
+  height: 580px;
+}
+
+.btn-outline-light {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+/* the next two selectors are responsible for making sure the images in the carousel are presented neatly and properly for all screen devices */
+
+/* overflow hidden also works with object-fit and the other codes for a better presentation of the images inside the carousel */
+.carousel-item {
+  overflow: hidden;
+}
+
+.carousel-inner>.carousel-item>img {
+  height: 400px !important;
+  /* object-fit specify how an <img> or <video> should be resized to fit its container and the remaining 
+codes are meant to show the central area of the carousel image when it is resized to*/
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+/* for change the color of the icons (notice after fill='%23 --->hex code ) */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F0F8FF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23F0F8FF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* fade in effect for carousel */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* carousel dark overlay */
+.carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .carousel-inner>.carousel-item>img {
+    height: 450px !important;
+    /* object-fit specify how an <img> or <video> should be resized to fit its container and the remaining 
+  codes are meant to show the central area of the carousel image when it is resized to*/
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: none;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+
+  /* styles for carousel */
+  .carousel-caption {
+    top: 7em;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2em;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* styles for carousel */
+  .carousel-inner>.carousel-item>img {
+    height: 600px !important;
+    /* object-fit specify how an <img> or <video> should be resized to fit its container and the remaining 
+    codes are meant to show the central area of the carousel image when it is resized to*/
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: none;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  .carousel-caption {
+    top: 200px;
+    left: 40px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 35px;
+    color: white;
+  }
+
+  .carousel-caption span {
+    font-size: 20px;
+    color: white;
+  }
+
+  .carousel-inner>.carousel-item>img {
+    height: 580px;
+  }
+
+  .btn-outline-light {
+    margin-top: 20px;
+  }
+}

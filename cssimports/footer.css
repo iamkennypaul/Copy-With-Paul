@@ -1,0 +1,169 @@
+#footer {
+  padding: 25px 5px;
+  background: #2D2D2D;
+  color: white;
+}
+
+.footer-flex {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-flex h4 {
+  margin-left: 2%;
+}
+
+.footer-flex h4 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-flex ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 2%;
+  margin-top: 15px;
+}
+
+.footer-flex ul li {
+  display: inline-block;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-flex ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-flex ul li:nth-of-type(n + 2) {
+  margin-top: 6px;
+}
+
+.footer-flex2 {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-flex2 ul li {
+  display: inline-block;
+}
+
+.footer-flex2 ul li:nth-of-type(n + 2) {
+  margin-top: 10px;
+}
+
+.footer-flex2 div small {
+  color: white;
+  /* Example style */
+  font-size: 14px;
+  /* Example style */
+  /* Add any other styles you want to apply */
+}
+
+.footer-flex a img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #footer {
+    padding: 25px 5px;
+  }
+
+  .footer-flex {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 5%;
+  }
+
+  .footer-flex .unordered {
+    margin-left: 20px;
+  }
+
+  .footer-flex ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 3px;
+  }
+
+  .footer-flex ul li {
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+  .footer-flex ul li:nth-of-type(n + 2) {
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+
+  .footer-flex2 {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding-bottom: 20px;
+  }
+
+  .footer-flex2 ul li:nth-of-type(n + 2) {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 760px) {
+  .footer-flex .unordered {
+    margin-left: 100px;
+  }
+
+  .footer-flex ul li:nth-of-type(n + 2) {
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+
+  .footer-flex a img {
+    width: 35px;
+    height: 35px;
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #footer {
+    padding-top: 60px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+
+  .footer-flex .unordered {
+    margin-left: 150px;
+  }
+
+  .footer-flex ul li:nth-of-type(n + 2) {
+    margin-left: 250px;
+    margin-top: 0px;
+  }
+
+  .footer-flex2 {
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .footer-flex a img {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,145 @@
+#portfolio {
+    background: #F9FAFB;
+}
+
+.proAll {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 90%;
+}
+
+.proAll h1 {
+    font-weight: 500;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.proAll .alert-info {
+    margin-top: 30px;
+}
+
+.productsCard {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.productsCard .col {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05),
+        -2px 2px 5px rgba(0, 0, 0, 0.05),
+        0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.productsCard .col .card-body {
+    margin-left: 80%;
+}
+
+.productsCard .col .card-body img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Ensure the card container hides overflow */
+.col .card {
+    overflow: hidden;
+}
+
+/* Apply zoom effect on hover for the first image within each .col */
+#portfolio .col:hover .card-img-top {
+    transform: scale(1.05);
+    /* Subtle zoom */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Ensure smooth transition when not hovered */
+#portfolio .col .card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure images within .card-body are not affected */
+.col .card-body img {
+    transform: none;
+}
+
+#portfolio .startBox {
+    margin-top: -30px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Small devices (landscape phones, 768px and up) */
+@media (min-width: 768px) {
+    .productsCard .row-cols-1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .productsCard .col {
+        width: 47%;
+        height: 100%;
+        padding: 0px;
+        border-radius: 7px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05),
+            -2px 2px 5px rgba(0, 0, 0, 0.05),
+            0px 5px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    #portfolio .startBox {
+        margin-top: -10px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .proAll {
+        margin: 0 auto;
+        margin-top: 7rem;
+        width: 90%;
+    }
+
+    .proAll p {
+        font-size: 17px;
+    }
+
+    .productsCard {
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    .productsCard .row-cols-1 {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .productsCard .col {
+        width: 31%;
+        height: 100%;
+        padding: 0px;
+        border-radius: 7px;
+    }
+
+    .productsCard .col .card-body img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #portfolio .startBox {
+        margin-top: -80px;
+    }
+}

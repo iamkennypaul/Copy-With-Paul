@@ -1,0 +1,305 @@
+#contact {
+  background-color: #F9FAFB;
+}
+
+.header-section {
+  margin: 0 auto;
+  margin-top: 6rem;
+  align-self: center;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.header-section header {
+  text-align: center;
+  font-weight: 500;
+  color: #2D2D2D;
+  font-size: 16px;
+}
+
+.flex-contact {
+  margin-bottom: 40px;
+  margin: 0 auto;
+  align-self: center;
+  width: 95%;
+}
+
+.flex-contact .talk {
+  padding: 0 10px;
+}
+
+.flex-contact .talk h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #2D2D2D;
+}
+
+.flex-contact .talk p a {
+  text-decoration: none;
+}
+
+.flex-contact form {
+  padding: 0 10px;
+}
+
+.flex-contact form .top .input-box {
+  position: relative;
+  height: 60px;
+}
+
+.flex-contact form .top .input-box input {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #a6a6a6;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  padding: 0 20px 0 8px;
+}
+
+.flex-contact form .email input {
+  height: 60px;
+  width: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #a6a6a6;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  padding: 0 20px 0 8px;
+}
+
+.flex-contact form .top .input-box.lastName,
+.flex-contact form .email input {
+  margin-top: 21px;
+}
+
+.flex-contact form .top .name:focus {
+  border: 1px solid #03D094;
+}
+
+.flex-contact form .email:focus {
+  border: 1px solid #03D094;
+}
+
+/* this override bootstrap's reboot.scss for textarea focus.  */
+textarea:focus,
+.txa-border:focus {
+  outline: 0 none;
+}
+
+.flex-contact form textarea:focus {
+  border: 1px solid #03D094;
+}
+
+/* in case of others:
+
+#bootstrap-overrides input[type="text"]:focus, input[type="email"]:focus, 
+input[type="tel"]:focus, input[type="submit"]:focus, select:focus, textarea:focus, .txa-border:focus{
+    border-color:#620062;
+    box-shadow: 0 1px 1px rgba(130, 38, 130, 1), 0 0 8px rgba(170, 49, 170, 0.51);
+    outline: 0 none;
+}
+
+*/
+.flex-contact form .top span {
+  color: red;
+}
+
+.flex-contact form .bottom span {
+  color: red;
+}
+
+.flex-contact form .email span {
+  color: red;
+}
+
+.flex-contact form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid#CACACA;
+  margin-top: 15px;
+}
+
+.flex-contact form button {
+  padding: 10px 26px;
+  margin-top: 7px;
+  outline: none;
+  border: none;
+  background: #03D094;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+}
+
+.flex-contact form button:hover {
+  background: #11edab;
+}
+
+.flex-contact form .bottom {
+  position: relative;
+}
+
+.input-box span {
+  font-size: 14px;
+}
+
+.bottom span {
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+/* 
+.flex-contact {
+  display: flex;
+  flex-wrap: column wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+} 
+.flex-contact form .top {
+  display: flex;
+  margin-bottom: 30px;
+}
+.flex-contact form .top > * {
+  flex: 1;
+}
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .header-section header {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .flex-contact {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 100%;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+  }
+
+  .flex-contact .talk {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .flex-contact .talk h3 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .flex-contact form {
+    flex: 2;
+    margin-top: 0px;
+  }
+
+  .flex-contact form .top {
+    display: flex;
+  }
+
+  .flex-contact form .top>* {
+    flex: 1;
+  }
+
+  .flex-contact form .top .input-box input {
+    font-weight: 500;
+    padding: 0 40px 0 16px;
+  }
+
+  .flex-contact form .top .input-box.email {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+
+  .flex-contact form .top .input-box.firstName,
+  .flex-contact form .top .input-box.lastName {
+    width: 49%;
+  }
+
+  .flex-contact form .top .input-box.lastName {
+    margin-left: 2%;
+    margin-top: 0px;
+  }
+
+  .flex-contact form button {
+    padding: 15px 30px;
+    margin-top: 7px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header-section {
+    margin-top: 6rem;
+  }
+
+  .header-section header {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .flex-contact {
+    display: flex;
+    flex-wrap: row wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .flex-contact .talk {
+    flex: 1;
+  }
+
+  .flex-contact .talk h3 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .flex-contact .talk p {
+    font-size: 17px;
+  }
+
+  .flex-contact form {
+    flex: 2;
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  .flex-contact form .top {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .flex-contact form .top>* {
+    flex: 1;
+  }
+
+  .flex-contact form .email input {
+    margin-top: 12px;
+  }
+
+  .flex-contact form textarea {
+    margin-top: 17px;
+  }
+
+  .flex-contact form button {
+    padding: 13px 30px;
+    margin-top: 0px;
+  }
+}

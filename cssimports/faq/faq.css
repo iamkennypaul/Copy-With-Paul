@@ -1,0 +1,41 @@
+#faq {
+  background-color: #F9FAFB;
+}
+
+.faqHead {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.accordion {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Small devices (landscape phones, 768px and up) */
+@media (min-width: 768px) {
+  .accordion {
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 70px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .faqHead {
+    margin-top: 7rem;
+  }
+
+  .accordion {
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 100px;
+  }
+}

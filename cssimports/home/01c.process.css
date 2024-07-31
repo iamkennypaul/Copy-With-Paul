@@ -1,0 +1,144 @@
+.proBox {
+    background: #F9FAFB;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.proHead {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.proHead h1 {
+    text-align: center;
+}
+
+.proSet {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.proChild {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.proText {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.proChild:nth-of-type(1),
+.proChild:nth-of-type(2),
+.proChild:nth-of-type(3),
+.proChild:nth-of-type(4) {
+    margin-bottom: 25px;
+}
+
+.proIcon {
+    width: 2%;
+    color: #03D094;
+    font-size: 19px;
+}
+
+.proHXP {
+    width: 86%;
+    margin-left: 12%;
+}
+
+.proHXP h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.proHXP p {
+    font-size: 15px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+@media (min-width: 760px) {
+    .proBox {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 10px;
+    }
+
+    .proHead h1 {
+        margin-top: 30px;
+    }
+
+    .proSet {
+        width: 93%;
+        padding: 20px;
+        margin-top: 50px;
+        flex-flow: row wrap;
+    }
+
+    .proChild {
+        width: 47%;
+        flex-flow: row wrap;
+    }
+
+    .proChild:nth-of-type(1),
+    .proChild:nth-of-type(2) {
+        margin-bottom: 40px;
+    }
+
+    .proChild:nth-of-type(3),
+    .proChild:nth-of-type(4) {
+        margin-bottom: 40px;
+    }
+
+    .proIcon {
+        width: 5%;
+        font-size: 17px;
+    }
+
+    .proHXP {
+        width: 93%;
+        margin-left: 2%;
+    }
+
+    .proHXP h2 {
+        font-size: 25px;
+    }
+
+    .proHXP p {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .proHead h1 {
+        margin-top: 60px;
+    }
+
+    .proChild:nth-of-type(1),
+    .proChild:nth-of-type(2) {
+        margin-bottom: 60px;
+    }
+
+    .proChild:nth-of-type(3),
+    .proChild:nth-of-type(4) {
+        margin-bottom: 70px;
+    }
+
+    .proIcon {
+        font-size: 20px;
+    }
+
+    .proHXP h2 {
+        font-size: 28px;
+    }
+}

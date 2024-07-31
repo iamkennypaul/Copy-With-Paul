@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <!-- Make sure you import all necessary bootstrap css files,font awesome css files and styles.css into css folder -->
+  <!-- Make sure to import the necessary javascript folder that includes the jquery,popper and bootstrap js files -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/sweetalert2.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Contact | Copy With Paul</title>
+</head>
+
+<body id="contact">
+  <nav id="navbarku" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active homeLink" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contactBox .contactLink" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header section -->
+  <div class="header-section">
+    <header>Email me at kennypaul757@gmail.com or use the form below.</header>
+  </div>
+
+  <div class="flex-contact">
+    <div class="talk">
+      <h3>Let's talk about</h3>
+      <h3>everything!</h3>
+
+      <p>
+        For specific inquiries or requests, kindly use the contact form.
+        General questions can often be answered by visiting my
+        <a href="faq.html">FAQ page.</a>
+      </p>
+    </div>
+
+    <form id="myForm" action="https://formspree.io/f/mblrognb" method="POST">
+      <div class="top">
+        <!-- ... (previous code) ... -->
+        <div class="input-box">
+          <input type="text" name="first-name" placeholder="Enter your first name" class="name" id="contact-first-name"
+            onkeyup="validateFirstName()" />
+          <span id="first-name-error"></span>
+        </div>
+
+        <div class="input-box lastName">
+          <input type="text" name="last-name" placeholder="Enter your last name" class="name" id="contact-last-name"
+            onkeyup="validateLastName()" />
+          <span id="last-name-error"></span>
+        </div>
+        <!-- ... (rest of the code) ... -->
+      </div>
+
+      <div class="input-box email">
+        <input type="email" name="email" placeholder="Enter your Email" class="email" id="contact-email"
+          onkeyup="validateEmail()" />
+        <span id="email-error"></span>
+      </div>
+
+      <div class="bottom input-box">
+        <textarea class="txa-border" name="message" rows="8" placeholder="Enter your message" id="contact-message"
+          onkeyup="validateMessage()"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+      <button onclick="return validateForm()" class="btn-sweet">
+        Submit
+      </button>
+    </form>
+
+  </div>
+
+  <!-- 5th section -->
+  <section id="footer">
+    <div class="footer-flex">
+      <div>
+        <a class="" href="index.html"><img src="images/logo.jpg" alt=""></a>
+      </div>
+
+      <div class="unordered">
+        <ul>
+          <li><a class="" href="index.html">Home</a></li>
+          <li><a class="" href="about.html">About</a></li>
+          <li><a class="" href="faq.html">FAQ</a></li>
+          <li><a class="" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-flex2">
+      <div>
+        <small><i class="fas fa-copyright" style="color: #777"></i> 2024
+          Copy With Paul. All Rights Reserved.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's Javascript Plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script type="module" src="js/jsimports/contactNav&Hover.js"></script>
+  <script src="js/contactvalidation.js"></script>
+  <!-- Include all compiled plugins (below), or individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

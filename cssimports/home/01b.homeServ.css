@@ -1,0 +1,213 @@
+.homeServ {
+    background: #F9FAFB;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+.copyServ h3 {
+    font-size: 17px;
+    color: #03D094;
+    font-weight: 800;
+
+}
+
+.whatServ h1 {
+    margin-top: 5px;
+    color: #2D2D2D;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.servBox {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10px;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.servBox .col {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.col .card {
+    border-radius: 7px;
+}
+
+.col .card img {
+    width: 100%;
+    height: 160px;
+    /* Set a fixed height or use a flexible unit like vh */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* Ensure the image covers the container */
+}
+
+.col .card h5 {
+    font-weight: 600;
+    color: black;
+}
+
+.portBtn {
+    display: inline-block;
+    font-size: 16px;
+    width: 170px;
+    text-decoration: none;
+    border: 1px solid #03D094;
+    background: #03D094;
+    color: #F9FAFB;
+    padding: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-weight: 500;
+    align-self: center;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portBtn:hover {
+    background: #11edab;
+    color: #F9FAFB;
+    border: 1px solid #11edab;
+}
+
+.portBtn .fas.fa-arrow-right {
+    color: #F9FAFB;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+@media (min-width: 760px) {
+    .copyServ h3 {
+        font-size: 20px;
+        font-weight: 800;
+        padding-left: 1%;
+    }
+
+    .whatServ h1 {
+        font-size: 40px;
+        font-weight: 900;
+        padding-left: 1%;
+    }
+
+    .servBox {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    .servBox .col {
+        width: 47%;
+        height: 100%;
+        padding: 0px;
+        border-radius: 7px;
+    }
+
+    .col .card {
+        border-radius: 7px;
+    }
+
+    .col .card img {
+        width: 100%;
+        height: 190px;
+        /* Set a fixed height or use a flexible unit like vh */
+        -o-object-fit: cover;
+        object-fit: cover;
+        /* Ensure the image covers the container */
+    }
+
+    .portBtn {
+        font-size: 19px;
+        width: 190px;
+    }
+
+    .portBtn .fas.fa-arrow-right {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .homeServ {
+        background: #F9FAFB;
+        padding: 60px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+
+    .copyServ h3 {
+        font-size: 20px;
+        color: #03D094;
+        font-weight: 800;
+        padding-left: 1%;
+    }
+
+    .whatServ h1 {
+        margin-top: 15px;
+        font-size: 45px;
+        font-weight: 900;
+        padding-left: 1%;
+    }
+
+    .servBox {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .servBox .col {
+        width: 31%;
+        height: 100%;
+        padding: 0px;
+        border-radius: 7px;
+    }
+
+    .col .card {
+        border-radius: 7px;
+    }
+
+    .col .card img {
+        width: 100%;
+        height: 190px;
+        /* Set a fixed height or use a flexible unit like vh */
+        -o-object-fit: cover;
+        object-fit: cover;
+        /* Ensure the image covers the container */
+    }
+
+    .col .card h5 {
+        font-weight: 600;
+    }
+
+    .portBtn {
+        font-size: 20px;
+        width: 200px;
+        padding: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 50px;
+    }
+
+    .portBtn .fas.fa-arrow-right {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}

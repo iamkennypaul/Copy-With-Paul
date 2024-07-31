@@ -1,0 +1,127 @@
+/* styles for the navigation bar */
+#navbarku {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 1s;
+  z-index: 10;
+}
+
+.navbar-nav .nav-item a {
+  color: #fff !important;
+  font-size: 14px;
+}
+
+.navbar-nav .nav-item .contactBox {
+  color: #fff !important;
+  border: 2px solid white;
+  padding: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 30px;
+  width: 50%;
+  text-align: center;
+}
+
+.navbar-nav .nav-item .contactBox:hover {
+  background: white !important;
+  color: black !important;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #03D094 !important;
+  transition: 0.5s;
+}
+
+.navbar {
+  background-color: #2D2D2D !important;
+}
+
+/* THIS CHANGE FOR THE BOOTSTRAP HAMBURGER ICON WAS MADE IN BOOSTRAP.MIN.CSS NOT HERE */
+.navbar-light .navbar-toggler-icon {
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e) unset !important;
+}
+
+/* THIS CHANGE WAS MADE IN THIS CSS FILE */
+.navbar-light .navbar-toggler {
+  border-color: #2D2D2D;
+}
+
+#home .navbar-nav .nav-item .homeLink,
+#about .navbar-nav .nav-item .aboutLink,
+#portfolio .navbar-nav .nav-item .portfolioLink,
+#how .navbar-nav .nav-item .howLink,
+#faq .navbar-nav .nav-item .faqLink,
+#contact .navbar-nav .nav-item .contactLink {
+  color: #03D094 !important;
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar-nav .nav-item a {
+    font-size: 15px;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+    margin-top: -4px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #navbarku {
+    width: 100%;
+    height: 50px;
+    padding: 35px 0px;
+    margin-left: 0px;
+  }
+
+  .container-fluid {
+    width: 97%;
+    margin: 0 auto;
+
+  }
+
+  .navbar {
+    padding: 15px 17px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 70px;
+  }
+
+  .navbar-nav .nav-item a {
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .dropdown-menu .dropdown-item {
+    margin-left: 0px !important;
+    font-size: 16px;
+  }
+
+  /* styles for the navigation bar */
+  .navbar-brand {
+    margin-left: 32px;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item .contactBox {
+    width: 100%;
+    margin-top: -3px;
+  }
+}

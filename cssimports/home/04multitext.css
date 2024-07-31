@@ -1,0 +1,137 @@
+/* Multiple text Styling */
+.multi-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.multi-text h1 {
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: 500;
+  margin: 0 0 2px;
+  color: #fff;
+}
+
+.multi-text p {
+  margin: 0;
+  overflow: hidden;
+}
+
+.multi-text p span {
+  font-size: 22px;
+  color: #03D094;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  line-height: 23px;
+  display: none;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+
+.multi-text p span.text-in {
+  display: block;
+  -webkit-animation: textIn 0.5s ease;
+  animation: textIn 0.5s ease;
+}
+
+.multi-text p span.text-out {
+  -webkit-animation: textOut 0.5s ease;
+  animation: textOut 0.5s ease;
+}
+
+@-webkit-keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+/* Multiple text Styling */
+@media (min-width: 576px) {
+  .multi-text h1 {
+    font-size: 30px;
+    line-height: 29px;
+    font-weight: 500;
+    margin: 0 0 2px;
+  }
+
+  .multi-text p span {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 760px) {
+  .multi-text {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /* Multiple text Styling */
+  .multi-text {
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .multi-text h1 {
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    font-weight: 500;
+  }
+
+  .multi-text p span {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 46px;
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,116 @@
+.startBox {
+    padding: 10px;
+    background: #F9FAFB;
+    padding-bottom: 90px;
+}
+
+.childBox {
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    padding: 50px;
+    width: 97%;
+    background: #ffffff;
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05),
+        -2px 2px 5px rgba(0, 0, 0, 0.05),
+        0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.childBox h3 {
+    color: #03D094;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.childBox h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.childBox .portBtn {
+    margin-top: 30px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+@media (min-width: 760px) {
+    .childBox {
+        display: flex;
+        text-align: center;
+        flex-flow: column wrap;
+        padding: 70px;
+        width: 80%;
+        background: #ffffff;
+        border: 1px solid rgb(216, 215, 215);
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05),
+            -2px 2px 5px rgba(0, 0, 0, 0.05),
+            0px 5px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .childBox h3 {
+        color: #03D094;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .childBox h1 {
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .childBox .portBtn {
+        margin-top: 30px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .startBox {
+        padding: 50px;
+        background: #F9FAFB;
+        padding-bottom: 90px;
+    }
+
+    .childBox {
+        display: flex;
+        text-align: center;
+        flex-flow: column wrap;
+        padding: 70px;
+        width: 80%;
+        background: #ffffff;
+        border: 1px solid rgb(216, 215, 215);
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05),
+            -2px 2px 5px rgba(0, 0, 0, 0.05),
+            0px 5px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .childBox h3 {
+        color: #03D094;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .childBox h1 {
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    .childBox .portBtn {
+        margin-top: 30px;
+    }
+}
